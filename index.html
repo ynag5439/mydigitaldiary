@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕉️ Hindu Mantra Chanter - Sacred Mantras Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕉️</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-box">
+                <h1 class="title">🕉️ MANTRA CHANTER 🕉️</h1>
+                <p class="subtitle">Sacred Hindu Mantras for Peace & Prosperity</p>
+            </div>
+            <div class="om-symbol">
+                <div class="om-art">ॐ</div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs">
+            <button class="tab-btn active" data-tab="browse">Browse Mantras</button>
+            <button class="tab-btn" data-tab="chant">Chanting Session</button>
+            <button class="tab-btn" data-tab="about">About</button>
+        </nav>
+
+        <!-- Browse Mantras Tab -->
+        <div id="browse" class="tab-content active">
+            <div class="mantras-grid">
+                <!-- Mantras will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Chanting Session Tab -->
+        <div id="chant" class="tab-content">
+            <div class="chant-controls">
+                <h2>🧘‍♀️ Guided Chanting Session</h2>
+                
+                <div class="control-group">
+                    <label for="mantra-select">Select Mantra:</label>
+                    <select id="mantra-select" class="control-input">
+                        <!-- Options populated by JavaScript -->
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="repetitions">Repetitions (1-108):</label>
+                    <input type="number" id="repetitions" class="control-input" min="1" max="108" value="21">
+                    <small>Traditional mala count: 108 beads</small>
+                </div>
+
+                <div class="control-buttons">
+                    <button id="start-chant" class="btn btn-primary">🔔 Start Chanting</button>
+                    <button id="stop-chant" class="btn btn-secondary" disabled>⏹️ Stop</button>
+                </div>
+            </div>
+
+            <div id="chant-display" class="chant-display hidden">
+                <div class="current-mantra">
+                    <h3 id="chant-deity"></h3>
+                    <div id="chant-sanskrit" class="sanskrit-text"></div>
+                    <div id="chant-transliteration" class="transliteration-text"></div>
+                </div>
+                
+                <div class="chant-progress">
+                    <div class="progress-info">
+                        <span id="current-count">0</span> / <span id="total-count">0</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div id="chant-text" class="chant-text"></div>
+                <div id="chant-status" class="chant-status"></div>
+            </div>
+        </div>
+
+        <!-- About Tab -->
+        <div id="about" class="tab-content">
+            <div class="about-content">
+                <h2>🙏 About Hindu Mantra Chanter</h2>
+                
+                <div class="about-section">
+                    <h3>✨ What are Mantras?</h3>
+                    <p>Mantras are sacred sounds, words, or phrases used in Hindu and Buddhist traditions for meditation, prayer, and spiritual practice. Each mantra carries specific vibrations and meanings that help focus the mind and connect with divine energies.</p>
+                </div>
+
+                <div class="about-section">
+                    <h3>🕉️ Our Sacred Collection</h3>
+                    <div class="mantra-list">
+                        <div class="mantra-item">
+                            <strong>Ganesha Mantra</strong> - Begin any endeavor by removing obstacles
+                        </div>
+                        <div class="mantra-item">
+                            <strong>Shiva Mantra</strong> - Connect with the destroyer of ignorance
+                        </div>
+                        <div class="mantra-item">
+                            <strong>Krishna Mantra</strong> - Chant the divine names for devotion
+                        </div>
+                        <div class="mantra-item">
+                            <strong>Guru Mantra</strong> - Honor the teachers who guide us
+                        </div>
+                        <div class="mantra-item">
+                            <strong>Gayatri Mantra</strong> - The mother of all mantras, for wisdom
+                        </div>
+                        <div class="mantra-item">
+                            <strong>Lakshmi Mantra</strong> - Invoke prosperity and abundance
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h3>📿 How to Use</h3>
+                    <ol>
+                        <li><strong>Browse Mantras:</strong> Explore each mantra to understand its meaning and significance</li>
+                        <li><strong>Start Chanting:</strong> Choose a mantra and set your repetition count (traditionally 108)</li>
+                        <li><strong>Focus & Breathe:</strong> Follow along with the guided session, focusing on the sound and meaning</li>
+                        <li><strong>Find Peace:</strong> Allow the mantras to bring calm and spiritual connection to your day</li>
+                    </ol>
+                </div>
+
+                <div class="about-section">
+                    <h3>🌟 Benefits of Mantra Chanting</h3>
+                    <ul>
+                        <li>Reduces stress and anxiety</li>
+                        <li>Improves focus and concentration</li>
+                        <li>Promotes inner peace and spiritual growth</li>
+                        <li>Connects you with ancient wisdom traditions</li>
+                        <li>Creates positive vibrations in mind and body</li>
+                    </ul>
+                </div>
+
+                <div class="footer-note">
+                    <p><em>Om Shanti Shanti Shanti</em> - May there be peace in mind, body, and spirit 🕉️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
